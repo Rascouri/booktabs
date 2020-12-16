@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+
+\title{OCT Table}
+\author{ezw19aeu }
+\date{November 2020}
+
+\begin{document}
+
+\maketitle{Title}
+
+\section{Table}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{llllll}
+        \toprule
+        \multirow{2}{*}{Metrics} & \multirow{2}{*}{Diagnosis} & \multicolumn{3}{c}{Training Method}\\
+        \cmidrule{3-5} \\
+        {} & {} & DTL & MTL- & MTL \\
+        \midrule
+        Accuracy & {} & 0.86 & 0.91 & \textbf{0.94} \\
+        \midrule
+        \multirow{4}{*}{Specificity} & Normal & 0.94 & 0.95 & \textbf{0.98} \\
+        {} & MH & 0.77 & 0.90 & \textbf{0.96} \\
+        {} & DR & 0.83 & \textbf{0.90} & 0.87 \\
+        {} & CSR & 0.74 & 0.82 & \textbf{0.91} \\
+        \midrule
+        \multirow{4}{*}{Sensitivity} & Normal & \textbf{1.00} & \textbf{1.00} & 0.98 \\
+        {} & MH & 0.69 & 0.73 & \textbf{0.87} \\
+        {} & DR & 0.68 & 0.81 & \textbf{0.93} \\
+        {} & CSR & 0.81 & \textbf{0.94} & 0.92 \\
+        \midrule
+        \multirow{4}{*}{f1-score} & Normal & 0.97 & 0.97 & \textbf{0.98} \\
+        {} & MH & 0.73 & 0.81 & \textbf{0.91} \\
+        {} & DR & 0.75 & 0.85 & \textbf{0.90} \\
+        {} & CSR & 0.77 & 0.87 & \textbf{0.91} \\
+        
+    
+    \end{tabular}
+    
+\end{table}
+
+https://jdhao.github.io/2019/08/27/latex_table_with_booktabs/
+
+\end{document}
